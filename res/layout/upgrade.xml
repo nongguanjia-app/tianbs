@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include android:id="@+id/title"
+        layout="@layout/title" />
+
+    <ListView
+        android:id="@+id/upgrade_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:divider="@null" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/title_bar_bg"
+        android:text="@string/upgrade"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
